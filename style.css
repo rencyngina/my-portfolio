@@ -309,6 +309,8 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  margin-bottom: 2rem;
+  width: 48%;
 }
 
 .section-container {
@@ -337,7 +339,8 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 

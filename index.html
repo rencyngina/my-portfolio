@@ -1,442 +1,766 @@
 <!DOCTYPE html>
+<!-- Portfolio structure: sticky header, editorial hero, capability sections, three work showcases, and contact footer. -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rency Ngina</title>
+    <title>Rency Ngina | Frontend Developer &amp; UI/UX Designer</title>
+    <meta
+      name="description"
+      content="Portfolio of Rency Ngina, a frontend developer and UI/UX designer focused on polished interfaces, thoughtful systems, and product-ready execution."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Rency Ngina</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rency Ngina</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" class="profile-image" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Rency ngina</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2"
-            href="https://docs.google.com/document/d/1k5Txgj9w-3TcHM9bebEgbz3pmUz4nHj9/edit?usp=sharing&ouid=101653496890334424081&rtpof=true&sd=true"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download CV
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Go to home section">
+          <span class="brand__mark">RN</span>
+          <span class="brand__text">Rency Ngina</span>
         </a>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/florence-ngina-052455246/'"
-          />
-          <img
-            src="./assets/github (1).png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br />Frontend Development <br> UX/UI designer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>-Front-end development<br />-UI/UX designer</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am an enthusiastic software engineering and a UI/UX designer 
-              professional with relevant experience having done my internship 
-              at RETIS SYSTEMS. During my course work, I have acquired valuable
-               knowledge and skills in software development and gained a solid
-                foundation in programming and design fundamentals and 
-                object-oriented concepts. I have honed my skills in various 
-                programming languages enabling me to effectively develop software
-                 applications and implement various functionalities. Having worked
-                  on educational and personal projects, I have enhanced my 
-                  problem-solving and debugging skills. I am looking forward to 
-                  joining an organization where I will have a chance to gain exposure
-                   to a wide variety of software engineering activities.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ReactJs</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">UX/UI</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Graphic design</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma/Adobe</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Sketch</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Wireframes & Prototypes</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <!-- ... (previous code) ... -->
-<section id="projects">
-  <p class="section__text__p1">Browse My Recent</p>
-  <h1 class="title">Projects</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <!-- Project 1 Container -->
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/project-1.png"
-            alt="Project 1"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project One</h2>
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://github.com/rencyngina/law-firm'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://digital-credentials-wallet.vercel.app/'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
-        </div>
-      </div>
 
-      <!-- Project 2 Container -->
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/project-2.png"
-            alt="Project 2"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Two</h2>
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://github.com/rencyngina/law-firm/'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://www.royfordlaw.com/'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
-        </div>
-      </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-      <!-- Project 3 Container -->
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/foodstore.png"
-            alt="Project 3"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Three</h2>
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://github.com/rencyngina/tokyo-revengers'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://tokyo-revengers-chi.vercel.app/'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
-        </div>
-      </div>
-
-      <!-- Project 4 Container -->
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/shoestudio.png"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Four</h2>
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://github.com/rencyngina/shoes-farm'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-          <a
-            class="btn btn-color-2 project-btn"
-            href='https://shoes-farm.vercel.app/'
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#contact'"
-  />
-</section>
-
-<!-- ... (remaining code) ... -->
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:rencyngina@gmail.com">rencyngina@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/florence-ngina-052455246/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
+        <div class="nav-panel" id="site-menu">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#experience">Expertise</a></li>
+            <li><a class="nav-link" href="#frontend-projects">Frontend</a></li>
+
+            <li><a class="nav-link" href="#figma-designs">Figma</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Rency Ngina.</p>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero section" id="home" data-section data-reveal>
+        <div class="hero__content">
+          <p class="eyebrow">Frontend developer / UI/UX designer / Nairobi, Kenya</p>
+          <h1 class="hero__title">
+            I design and build digital experiences that feel <span class="accent">sharp,</span> calm, and
+            ready for the real world.
+          </h1>
+          <p class="hero__copy">
+            I blend interface craftsmanship, product thinking, and engineering
+            discipline to turn ideas into launch-ready web experiences with a
+            strong visual point of view.
+          </p>
+          <div class="hero__actions">
+            <a
+              class="button button--primary"
+              href="#frontend-projects"
+              aria-label="Jump to selected frontend projects"
+            >
+              View selected work
+            </a>
+            <a
+              class="button button--secondary"
+              href="https://docs.google.com/document/d/1wByLaoRQtCynhztVfjQMtOAIaGHCrLJ9yocCvvawA2A/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open CV in a new tab"
+            >
+              Open CV
+            </a>
+          </div>
+          <ul class="hero__highlights" aria-label="Core strengths">
+            <li>Responsive interfaces with clean component thinking</li>
+            <li>Figma-to-code execution with strong visual fidelity</li>
+            <li>Accessible, maintainable UI systems that scale</li>
+          </ul>
+        </div>
+
+        <aside class="hero__visual delay-2" data-reveal>
+          <div class="portrait-card">
+            <div class="portrait-card__glow" aria-hidden="true"></div>
+            <img
+              src="./assets/profile-pic.jpg"
+              class="portrait-card__image"
+              alt="Portrait of Rency Ngina"
+            />
+            <div class="portrait-card__note">
+              <p class="portrait-card__label">Current focus</p>
+              <p class="portrait-card__value">
+                Building polished frontend products and design-led digital systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-stats" aria-label="Professional focus areas">
+            <article class="hero-stat">
+              <span class="hero-stat__number">01</span>
+              <div>
+                <h2>Frontend Craft</h2>
+                <p>Clean implementation, responsive behavior, and interaction detail.</p>
+              </div>
+            </article>
+            <article class="hero-stat">
+              <span class="hero-stat__number">02</span>
+              <div>
+                <h2>Design Precision</h2>
+                <p>Figma systems, intuitive flows, and visual hierarchy that holds up.</p>
+              </div>
+            </article>
+            <article class="hero-stat">
+              <span class="hero-stat__number">03</span>
+              <div>
+                <h2>Product Thinking</h2>
+                <p>Interfaces shaped around usability, clarity, and trust.</p>
+              </div>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <!-- About -->
+      <section class="section section--framed" id="about" data-section data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">A designer-developer who cares about the entire experience.</h2>
+          <p class="section-copy">
+            I enjoy taking a product from rough idea to a polished interface that
+            feels intentional at every layer, from visual rhythm and microcopy to
+            frontend implementation and usability.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-story delay-1" data-reveal>
+            <img
+              src="./assets/about-pic.jpg"
+              alt="Rency Ngina working portrait"
+              class="about-story__image"
+            />
+            <div class="about-story__content">
+              <p>
+                I have hands-on experience in frontend development and UI/UX
+                design, including internship exposure at RETIS SYSTEMS and
+                practical work across coursework and personal builds.
+              </p>
+              <p>
+                My strength is translating structure into something people
+                instantly understand: a layout that breathes, interactions that
+                feel considered, and code that is clean enough to grow with the
+                product.
+              </p>
+            </div>
+          </div>
+
+          <div class="fact-grid">
+            <article class="fact-card delay-2" data-reveal>
+              <p class="fact-card__label">Experience</p>
+              <h3>Frontend development and UI/UX design</h3>
+              <p>1+ year building interfaces, improving user journeys, and sharpening product presentation.</p>
+            </article>
+            <article class="fact-card delay-3" data-reveal>
+              <p class="fact-card__label">Strengths</p>
+              <h3>Problem solving with visual judgment</h3>
+              <p>I pair debugging discipline with design sensitivity so the end result works and feels right.</p>
+            </article>
+            <article class="fact-card delay-4" data-reveal>
+              <p class="fact-card__label">Working style</p>
+              <h3>Thoughtful, reliable, product-minded</h3>
+              <p>I care about maintainability, accessibility, hierarchy, and the kind of detail users notice even when they cannot name it.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expertise -->
+      <section class="section" id="experience" data-section data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Expertise</p>
+          <h2 class="section-title">Capabilities across design, frontend systems, and delivery.</h2>
+          <p class="section-copy">
+            I work best where product polish and technical execution meet: turning
+            direction into a coherent system that is usable, scalable, and visually strong.
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card delay-1" data-reveal>
+            <h3>Frontend Engineering</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript, React, TypeScript basics</li>
+              <li>Responsive layouts, animation, and component-based thinking</li>
+              <li>Performance-aware UI implementation and accessibility hygiene</li>
+            </ul>
+          </article>
+          <article class="capability-card delay-2" data-reveal>
+            <h3>Design &amp; Prototyping</h3>
+            <ul>
+              <li>Figma workflows, visual systems, and interface exploration</li>
+              <li>Wireframes, user flows, and mid-to-high fidelity prototypes</li>
+              <li>Brand-aware screens with clear hierarchy and interaction intent</li>
+            </ul>
+          </article>
+          <article class="capability-card delay-3" data-reveal>
+            <h3>Workflow &amp; Collaboration</h3>
+            <ul>
+              <li>Version control, iterative improvements, and design handoff</li>
+              <li>Debugging, refinement, and translating feedback into action</li>
+              <li>Balancing structure, usability, and production-readiness</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Frontend Projects -->
+      <section class="section" id="frontend-projects" data-section data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Frontend Projects</p>
+          <h2 class="section-title">Production-minded interfaces with clear visual intent.</h2>
+          <p class="section-copy">
+            These projects highlight responsive implementation, layout discipline,
+            and the ability to turn concepts into interfaces that feel finished.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card delay-1" data-reveal>
+            <div class="project-card__media">
+              <img
+                src="./assets/spectra.png"
+                alt="Preview of the Digital Credentials Wallet project"
+                class="project-card__image"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Frontend build</p>
+                <h3>Digital Credentials Wallet</h3>
+              </div>
+              <p class="project-card__description">
+                A modern credentials experience designed around clarity, trust,
+                and a guided user journey for managing digital records.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used in Digital Credentials Wallet">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>Responsive UI</li>
+                <li>Vercel</li>
+              </ul>
+              <div class="project-card__actions">
+                <a
+                  class="button button--secondary"
+                  href="https://github.com/rencyngina/law-firm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+                <a
+                  class="button button--primary"
+                  href="https://spektra-engineers.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card delay-2" data-reveal>
+            <div class="project-card__media">
+              <img
+                src="./assets/project-2.png"
+                alt="Preview of the Royford Law Firm website"
+                class="project-card__image"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Client-style website</p>
+                <h3>Royford Law Firm</h3>
+              </div>
+              <p class="project-card__description">
+                A professional, content-led legal website built to feel credible,
+                structured, and accessible across screen sizes.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used in Royford Law Firm">
+                <li>React</li>
+                <li>CSS</li>
+                <li>Responsive Design</li>
+                <li>Brand Presentation</li>
+              </ul>
+              <div class="project-card__actions">
+                <a
+                  class="button button--secondary"
+                  href="https://github.com/rencyngina/law-firm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+                <a
+                  class="button button--primary"
+                  href="https://www.royfordlaw.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card delay-3" data-reveal>
+            <div class="project-card__media">
+              <img
+                src="./assets/foodstore.png"
+                alt="Preview of the Tokyo Revengers food store experience"
+                class="project-card__image"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Interactive storefront</p>
+                <h3>Tokyo Revengers Food Store</h3>
+              </div>
+              <p class="project-card__description">
+                A vibrant commerce-style interface focused on playful presentation,
+                browsing flow, and energetic visual rhythm.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used in Tokyo Revengers Food Store">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>UI Animation</li>
+                <li>Vercel</li>
+              </ul>
+              <div class="project-card__actions">
+                <a
+                  class="button button--secondary"
+                  href="https://github.com/rencyngina/tokyo-revengers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+                <a
+                  class="button button--primary"
+                  href="https://tokyo-revengers-chi.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card delay-4" data-reveal>
+            <div class="project-card__media">
+              <img
+                src="./assets/shoestudio.png"
+                alt="Preview of the Shoe Studio storefront"
+                class="project-card__image"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Landing page build</p>
+                <h3>Shoe Studio</h3>
+              </div>
+              <p class="project-card__description">
+                A product-led retail landing page with strong visual hierarchy,
+                focused storytelling, and smooth presentation details.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used in Shoe Studio">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Interaction Design</li>
+              </ul>
+              <div class="project-card__actions">
+                <a
+                  class="button button--secondary"
+                  href="https://github.com/rencyngina/shoes-farm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+                <a
+                  class="button button--primary"
+                  href="https://shoes-farm.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card delay-5" data-reveal>
+            <div class="project-card__media">
+              <img
+                src="./assets/spectra.png"
+                alt="Preview of the Sovereign Wealth Management website"
+                class="project-card__image"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Business website</p>
+                <h3>Sovereign Wealth Management</h3>
+              </div>
+              <p class="project-card__description">
+                A polished corporate web presence built with smooth animations,
+                responsive layout, and a professional identity for a wealth management firm.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used in Sovereign Wealth Management">
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+                <li>Animation</li>
+                <li>Responsive</li>
+              </ul>
+              <div class="project-card__actions">
+                <a
+                  class="button button--secondary"
+                  href="https://github.com/rencyngina"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View code
+                </a>
+                <a
+                  class="button button--primary"
+                  href="https://brochure-app-bice.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live preview
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Backend Projects (commented out until backend projects are ready) -->
+      <!--
+      <section class="section section--ink" id="backend-projects" data-section data-reveal>
+        <div class="section-heading section-heading--light">
+          <p class="eyebrow">Backend Projects</p>
+          <h2 class="section-title">Service thinking that supports the interface, not just the code.</h2>
+          <p class="section-copy">
+            This section is structured to showcase backend problem solving, data flow,
+            and API-oriented thinking alongside frontend presentation.
+          </p>
+        </div>
+
+        <div class="project-grid project-grid--backend">
+          <article class="project-card project-card--backend delay-1" data-reveal>
+            <div class="project-card__media project-card__media--backend">
+              <img
+                src="./assets/library.png"
+                alt="Illustration representing a backend library operations system"
+                class="project-card__image project-card__image--contain"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Systems workflow</p>
+                <h3>Library Operations API</h3>
+              </div>
+              <p class="project-card__description">
+                A portfolio-ready backend concept for managing catalog data, issue flows,
+                and status-driven records through clear service endpoints.
+              </p>
+              <ul class="tag-list tag-list--dark" aria-label="Backend technologies for Library Operations API">
+                <li>Python</li>
+                <li>REST API</li>
+                <li>Data Modeling</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="button button--ghost" href="https://github.com/rencyngina" target="_blank" rel="noopener noreferrer">
+                  GitHub profile
+                </a>
+                <a class="button button--secondary-light" href="#contact">
+                  Discuss build
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--backend delay-2" data-reveal>
+            <div class="project-card__media project-card__media--backend">
+              <img
+                src="./assets/python.png"
+                alt="Illustration representing Python automation and reporting tools"
+                class="project-card__image project-card__image--contain"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Automation tooling</p>
+                <h3>Python Reporting Toolkit</h3>
+              </div>
+              <p class="project-card__description">
+                Scripted workflows for transforming repetitive tasks into reliable,
+                reusable backend utilities that support operations and reporting.
+              </p>
+              <ul class="tag-list tag-list--dark" aria-label="Backend technologies for Python Reporting Toolkit">
+                <li>Python</li>
+                <li>Automation</li>
+                <li>Data Processing</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="button button--ghost" href="https://github.com/rencyngina" target="_blank" rel="noopener noreferrer">
+                  GitHub profile
+                </a>
+                <a class="button button--secondary-light" href="#contact">
+                  Discuss build
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--backend delay-3" data-reveal>
+            <div class="project-card__media project-card__media--backend">
+              <img
+                src="./assets/twitter.png"
+                alt="Illustration representing a social publishing service backend"
+                class="project-card__image project-card__image--contain"
+              />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker">Integration concept</p>
+                <h3>Publishing &amp; Alerts Service</h3>
+              </div>
+              <p class="project-card__description">
+                A backend concept focused on content triggers, notifications, and
+                external service communication for product-led workflows.
+              </p>
+              <ul class="tag-list tag-list--dark" aria-label="Backend technologies for Publishing and Alerts Service">
+                <li>Node.js</li>
+                <li>Integrations</li>
+                <li>Webhooks</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="button button--ghost" href="https://github.com/rencyngina" target="_blank" rel="noopener noreferrer">
+                  GitHub profile
+                </a>
+                <a class="button button--secondary-light" href="#contact">
+                  Discuss build
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      -->
+
+      <!-- Figma Designs -->
+      <section class="section section--figma" id="figma-designs" data-section data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow eyebrow--figma">Figma Designs</p>
+          <h2 class="section-title">Design explorations with a distinct system language.</h2>
+          <p class="section-copy">
+            This showcase is intentionally styled differently from the code work to
+            highlight interface design, prototyping, and visual system thinking.
+          </p>
+        </div>
+
+        <div class="project-grid project-grid--figma">
+          <article class="figma-card delay-1" data-reveal>
+            <img
+              src="./assets/figma-finflow.svg"
+              alt="Placeholder preview for the FinFlow mobile banking design"
+              class="figma-card__image"
+            />
+            <div class="figma-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker project-card__kicker--figma">Mobile design</p>
+                <h3>FinFlow Mobile Banking</h3>
+              </div>
+              <p class="project-card__description">
+                A finance app concept focused on trust signals, fast account scanning,
+                and simple money movement flows for mobile users.
+              </p>
+              <ul class="tag-list tag-list--figma" aria-label="Tags for FinFlow Mobile Banking">
+                <li>Mobile</li>
+                <li>Fintech</li>
+                <li>Prototype</li>
+              </ul>
+              <a
+                class="button button--figma"
+                href="https://www.figma.com/proto/k7a5WIJs95B5ox2aoF0VSd/Untitled?node-id=2-2&p=f&t=eTbA3XzS0Z1EIKcq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Figma prototype for FinFlow Mobile Banking"
+              >
+                View in Figma
+              </a>
+            </div>
+          </article>
+
+          <article class="figma-card delay-2" data-reveal>
+            <img
+              src="./assets/figma-kibanda.svg"
+              alt="Placeholder preview for the Kibanda insights dashboard design"
+              class="figma-card__image"
+            />
+            <div class="figma-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker project-card__kicker--figma">Dashboard design</p>
+                <h3>Kibanda Insights Dashboard</h3>
+              </div>
+              <p class="project-card__description">
+                A dashboard concept designed for quick scanning, strong data emphasis,
+                and a calm interface that keeps business decisions readable.
+              </p>
+              <ul class="tag-list tag-list--figma" aria-label="Tags for Kibanda Insights Dashboard">
+                <li>Dashboard</li>
+                <li>Analytics</li>
+                <li>Desktop</li>
+              </ul>
+              <a
+                class="button button--figma"
+                href="https://www.figma.com/proto/XMVxBu9ryJM47QPgKwJPfb/Untitled?node-id=27-125"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Figma prototype for Kibanda Insights Dashboard"
+              >
+                View in Figma
+              </a>
+            </div>
+          </article>
+
+          <article class="figma-card delay-3" data-reveal>
+            <img
+              src="./assets/figma-atelier.svg"
+              alt="Placeholder preview for the Atelier branding system design"
+              class="figma-card__image"
+            />
+            <div class="figma-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker project-card__kicker--figma">Brand system</p>
+                <h3>Atelier Brand Experience</h3>
+              </div>
+              <p class="project-card__description">
+                A visual identity exploration pairing editorial layout, product storytelling,
+                and a premium brand presentation system.
+              </p>
+              <ul class="tag-list tag-list--figma" aria-label="Tags for Atelier Brand Experience">
+                <li>Branding</li>
+                <li>Editorial</li>
+                <li>UI System</li>
+              </ul>
+              <a
+                class="button button--figma"
+                href="https://www.figma.com/proto/cSRAGRyoviF3jEYT3OXOl4/Untitled?node-id=19-18&p=f&t=e6mnxUqYdcyjjzck-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Figma prototype for Atelier Brand Experience"
+              >
+                View in Figma
+              </a>
+            </div>
+          </article>
+
+          <article class="figma-card delay-4" data-reveal>
+            <img
+              src="./assets/figma-atelier.svg"
+              alt="Preview for the Travel Project design"
+              class="figma-card__image"
+            />
+            <div class="figma-card__body">
+              <div class="project-card__heading">
+                <p class="project-card__kicker project-card__kicker--figma">Travel design</p>
+                <h3>Travel Project</h3>
+              </div>
+              <p class="project-card__description">
+                A travel experience concept exploring destination discovery,
+                itinerary layouts, and immersive visual storytelling.
+              </p>
+              <ul class="tag-list tag-list--figma" aria-label="Tags for Travel Project">
+                <li>Travel</li>
+                <li>UI Design</li>
+                <li>Prototype</li>
+              </ul>
+              <a
+                class="button button--figma"
+                href="https://www.figma.com/design/vGPsBwe1ryvMtJlZUnOeo2/TravelProject?node-id=0-1&p=f&t=QZSrH8UDMqrIKgeQ-0"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Figma design for Travel Project"
+              >
+                View in Figma
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--black" id="contact" data-section data-reveal>
+        <div class="section-heading section-heading--light">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let's build something that looks sharp and works hard.</h2>
+          <p class="section-copy">
+            If you need a frontend developer with design instinct, or a designer who
+            can think through implementation, I would love to hear about the project.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card delay-1" data-reveal>
+            <p class="contact-card__label">Email</p>
+            <a href="mailto:rencyngina@gmail.com">rencyngina@gmail.com</a>
+          </article>
+          <article class="contact-card delay-2" data-reveal>
+            <p class="contact-card__label">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/in/florence-ngina-052455246/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn
+            </a>
+          </article>
+          <article class="contact-card delay-3" data-reveal>
+            <p class="contact-card__label">GitHub</p>
+            <a href="https://github.com/rencyngina" target="_blank" rel="noopener noreferrer">
+              Explore repositories
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built for clarity, craft, and real product conversations.</p>
+      <p>Copyright &copy; 2026 Rency Ngina. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

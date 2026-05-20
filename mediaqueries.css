@@ -1,103 +1,207 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+/* Responsive layers: adapts the portfolio layout, navigation, grids, and spacing for tablet and mobile screens. */
+@media screen and (max-width: 1080px) {
+  :root {
+    --header-height: 5.25rem;
   }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+
+  .navbar {
+    padding: 0.85rem 1rem;
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 4rem;
   }
+
+  .hero__title {
+    max-width: 11ch;
+  }
+
+  .hero__visual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .about-grid,
+  .capability-grid,
+  .project-grid,
+  .project-grid--backend,
+  .project-grid--figma,
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .capability-card:last-child,
+  .contact-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .site-header {
+    padding-top: 0.75rem;
+  }
+
+  .navbar {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .nav-toggle.is-open span:first-child {
+    transform: translateY(0.45rem) rotate(45deg);
+  }
+
+  .nav-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.is-open span:last-child {
+    transform: translateY(-0.6rem) rotate(-45deg);
+  }
+
+  .nav-panel {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-panel.is-open {
+    display: block;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 0.75rem;
+  }
+
+  .nav-link {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .hero__visual {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .section--framed,
+  .section--ink,
+  .section--figma {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-grid,
+  .capability-grid,
+  .project-grid,
+  .project-grid--backend,
+  .project-grid--figma,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-card:last-child,
+  .contact-card:last-child {
+    grid-column: auto;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    --content-width: min(100vw - 1rem, 100%);
+  }
+
+  body::before {
+    opacity: 0.2;
+  }
+
+  .navbar {
+    width: min(100vw - 1rem, 100%);
+  }
+
+  .brand__text {
+    font-size: 0.92rem;
+  }
+
+  .hero {
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2.8rem, 15vw, 4.8rem);
+  }
+
+  .hero__copy,
+  .section-copy {
+    font-size: 1rem;
+  }
+
+  .hero__actions,
+  .project-card__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .portrait-card,
+  .hero-stat,
+  .about-story__content,
+  .fact-card,
+  .capability-card,
+  .project-card__body,
+  .figma-card__body,
+  .contact-card {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  .section-title {
+    max-width: 13ch;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navbar {
+    border-radius: 1.4rem;
+  }
+
+  .brand {
+    gap: 0.65rem;
+  }
+
+  .brand__mark {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .hero__highlights li,
+  .project-card__description,
+  .fact-card p,
+  .capability-card li,
+  .contact-card a {
+    font-size: 0.96rem;
+  }
+}

@@ -104,17 +104,15 @@ if (!prefersReducedMotion.matches) {
 
 const sectionObserver = new IntersectionObserver(
   (entries) => {
-    const visibleEntries = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((left, right) => right.intersectionRatio - left.intersectionRatio);
-
-    if (visibleEntries.length > 0) {
-      setActiveLink(visibleEntries[0].target.id);
-    }
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveLink(entry.target.id);
+      }
+    });
   },
   {
-    threshold: [0.2, 0.45, 0.65],
-    rootMargin: "-30% 0px -45% 0px",
+    threshold: 0,
+    rootMargin: "-40% 0px -55% 0px",
   }
 );
 

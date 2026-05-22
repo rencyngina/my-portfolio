@@ -53,16 +53,24 @@
     margin-left: auto;
   }
 
+  .nav-toggle.is-open {
+    background: rgba(183, 93, 56, 0.12);
+    border-color: rgba(183, 93, 56, 0.42);
+  }
+
   .nav-toggle.is-open span:first-child {
-    transform: translateY(0.45rem) rotate(45deg);
+    transform: translateY(0.53rem) rotate(45deg);
+    width: 1.35rem;
   }
 
   .nav-toggle.is-open span:nth-child(2) {
     opacity: 0;
+    width: 0;
   }
 
   .nav-toggle.is-open span:last-child {
-    transform: translateY(-0.6rem) rotate(-45deg);
+    transform: translateY(-0.53rem) rotate(-45deg);
+    width: 1.35rem;
   }
 
   .nav-panel {
@@ -162,7 +170,6 @@
     width: 100%;
   }
 
-  .portrait-card,
   .hero-stat,
   .about-story__content,
   .fact-card,

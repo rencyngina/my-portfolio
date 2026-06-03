@@ -857,6 +857,27 @@ ul {
   gap: 1rem;
 }
 
+.capability-grid--4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-badge {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-pill);
+  background: rgba(183, 93, 56, 0.12);
+  border: 1px solid rgba(183, 93, 56, 0.3);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
 .capability-card {
   padding: 1.5rem;
 }
